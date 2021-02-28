@@ -57,19 +57,19 @@ def draw_truba(y_truba,rast):
     truba = play.new_image(
     x = x_truba,
     y = y_truba + rast,
-    image="truba2.png",
+    image="/img/truba2.png",
     size=3000,
     transparency = 50)
     truba2 = play.new_image(
     x = x_truba,
     y = y_truba-delta,
-    image="truba1.png",
+    image="/img/truba1.png",
     size=3000,
     transparency = 50)
     return truba, truba2
 
 bird = play.new_image(
-    image = "birdanimation0.png",
+    image = "/img/birdanimation0.png",
     x = -300,
     y = 0,
     size=150)
@@ -100,7 +100,7 @@ def run():
                 truba[0].remove()
                 trubas.remove(truba)
 
-costims = ["birdanimation0.png","birdanimation1.png","birdanimation2.png"]
+costims = ["/img/birdanimation0.png","/img/birdanimation1.png","/img/birdanimation2.png"]
 @play.repeat_forever
 async def editcostim():
     if STATUS==1:
